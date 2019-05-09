@@ -1,0 +1,1135 @@
+@font-face {
+  font-family: 'TruenoLt';
+  src: "fonts/TruenoLt.otf"; }
+
+@font-face {
+  font-family: 'TruenoBd';
+  src: "fonts/TruenoBd.otf"; }
+
+@font-face {
+  font-family: 'Trueno_UltraBlack';
+  src: "fonts/Trueno_UltraBlack.otf"; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none; }
+
+body {
+  width: 100%;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.header-buy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50px;
+  background-color: #472424; }
+  .header-buy ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    line-height: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .header-buy ul li a {
+      font-family: "TruenoLt", arial;
+      margin-left: 40px;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400; }
+  .header-buy .header-buy-but {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    line-height: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto; }
+    .header-buy .header-buy-but img {
+      margin-top: 13px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      margin-right: 5px; }
+    .header-buy .header-buy-but span {
+      color: #ffffff;
+      margin-left: 10px;
+      font-weight: 400;
+      font-family: "TruenoLt", arial;
+      cursor: pointer; }
+    .header-buy .header-buy-but small {
+      color: #dcc5b8;
+      font-size: 13px;
+      cursor: pointer;
+      margin-left: 5px; }
+    .header-buy .header-buy-but button {
+      margin-left: 21px;
+      width: 80px;
+      height: 50px;
+      line-height: 50px;
+      background-color: #472424;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      font-family: "TruenoLt", arial; }
+      .header-buy .header-buy-but button:hover {
+        background-color: #ff7373; }
+    .header-buy .header-buy-but .register {
+      margin-left: 0; }
+
+.home-page {
+  overflow: hidden; }
+  .home-page .home-page-table {
+    min-height: 76px;
+    background-color: #623232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .home-page .home-page-table .img-block {
+      margin: auto;
+      margin-left: 290px; }
+      .home-page .home-page-table .img-block img {
+        width: 182px;
+        height: 24px; }
+    .home-page .home-page-table .c-hamburger {
+      display: none;
+      position: relative;
+      overflow: hidden;
+      width: 30px;
+      height: 30px;
+      font-size: 0;
+      cursor: pointer;
+      -webkit-transition: background 0.3s;
+      -o-transition: background 0.3s;
+      transition: background 0.3s;
+      background-color: #ff3264; }
+      .home-page .home-page-table .c-hamburger:focus {
+        outline: none; }
+      .home-page .home-page-table .c-hamburger span {
+        margin: auto;
+        width: 20px;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 2px;
+        right: 2px;
+        height: 1px;
+        background: black;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s; }
+        .home-page .home-page-table .c-hamburger span:before {
+          position: absolute;
+          display: block;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: black;
+          content: ""; }
+        .home-page .home-page-table .c-hamburger span:after {
+          position: absolute;
+          display: block;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: black;
+          content: ""; }
+        .home-page .home-page-table .c-hamburger span:before {
+          top: 6px; }
+        .home-page .home-page-table .c-hamburger span:after {
+          bottom: 5px; }
+    .home-page .home-page-table ul#table {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: start; }
+      .home-page .home-page-table ul#table li {
+        margin-left: 38px; }
+        .home-page .home-page-table ul#table li a {
+          color: #ffffff;
+          font-family: "TruenoLt", arial;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 76px; }
+          .home-page .home-page-table ul#table li a:hover {
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            padding-bottom: 26px;
+            color: #ff7373;
+            border-bottom: 4px solid #ff7373; }
+        .home-page .home-page-table ul#table li:first-child {
+          margin-left: 0; }
+  .home-page .home-page-action {
+    min-height: 600px;
+    position: relative;
+    background-color: #f0efee; }
+    .home-page .home-page-action img {
+      position: absolute;
+      top: -82px;
+      left: -150px; }
+    .home-page .home-page-action .home-page-action-all {
+      margin-left: 857px;
+      padding-top: 133px; }
+      .home-page .home-page-action .home-page-action-all h5 {
+        color: #623232;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: "TruenoLt", arial; }
+      .home-page .home-page-action .home-page-action-all h1 {
+        color: #623232;
+        font-size: 70px;
+        font-family: "Trueno_UltraBlack", arial;
+        font-weight: 800; }
+      .home-page .home-page-action .home-page-action-all h2 {
+        color: #ff7373;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: "Trueno_UltraBlack", arial;
+        padding-bottom: 15px; }
+      .home-page .home-page-action .home-page-action-all small {
+        color: #8a8784;
+        font-size: 16px;
+        font-family: "TruenoLt", arial;
+        line-height: 30px; }
+      .home-page .home-page-action .home-page-action-all button {
+        margin-top: 37px;
+        width: 255px;
+        height: 48px;
+        background-color: #ff7373;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 50px; }
+        .home-page .home-page-action .home-page-action-all button:hover {
+          background-color: #ff5a5a; }
+
+main .popular-sneakers-collection-all {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  main .popular-sneakers-collection-all .popular-sneakers-collection-nike {
+    width: 540px;
+    max-height: 542px;
+    border: 1px solid black;
+    position: relative;
+    background-color: black; }
+    main .popular-sneakers-collection-all .popular-sneakers-collection-nike hr {
+      position: absolute;
+      z-index: 1;
+      height: 32px;
+      width: 100%;
+      background: black;
+      border: none; }
+    main .popular-sneakers-collection-all .popular-sneakers-collection-nike .boots {
+      left: -14px;
+      position: absolute; }
+    main .popular-sneakers-collection-all .popular-sneakers-collection-nike button {
+      width: 211px;
+      height: 48px;
+      background-color: #4bd8cd;
+      color: #000000;
+      font-size: 16px;
+      line-height: 50px;
+      font-family: "TruenoBd", arial;
+      z-index: 5;
+      position: absolute;
+      font-weight: 700;
+      bottom: 50px;
+      left: 165px; }
+      main .popular-sneakers-collection-all .popular-sneakers-collection-nike button:hover {
+        background-color: #2dcec1; }
+  main .popular-sneakers-collection-all .popular-sneakers-collection-athletes {
+    margin-left: 30px; }
+    main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals {
+      width: 540px;
+      min-height: 255px;
+      background-color: #ff7373;
+      position: relative; }
+      main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals img {
+        position: absolute;
+        top: -22px;
+        left: -15px; }
+      main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals span {
+        display: block;
+        padding-top: 59px;
+        margin-left: 250px;
+        color: #ffffff;
+        font-size: 30px;
+        font-family: "TruenoLt", arial;
+        font-weight: 300; }
+      main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals h3 {
+        margin-left: 227px;
+        font-size: 30px;
+        color: #ffffff;
+        font-family: "TruenoLt", arial;
+        font-weight: 700; }
+      main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals button {
+        width: 145px;
+        height: 48px;
+        background-color: #623232;
+        font-size: 16px;
+        font-family: "TruenoBd", arial;
+        color: #ffffff;
+        line-height: 50px;
+        margin-top: 30px;
+        margin-left: 272px; }
+        main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals button:hover {
+          background-color: #472424; }
+    main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 30px; }
+      main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex .popular-sneakers-collection-premium {
+        margin-left: 30px; }
+
+main ul {
+  padding-bottom: 20px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  main ul li a {
+    color: #bdb9b5;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 35px;
+    font-family: "TruenoLt", arial;
+    font-weight: 400; }
+    main ul li a:hover {
+      color: #623232; }
+    main ul li a:active {
+      color: #623232; }
+
+main .new-collection-all {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 80%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto; }
+  main .new-collection-all .new-collection {
+    margin-left: 30px;
+    width: 255px;
+    min-height: 350px;
+    border: 1px solid #e0dfde;
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px; }
+    main .new-collection-all .new-collection:hover {
+      background-color: #fbfbfb; }
+    main .new-collection-all .new-collection:hover .add-collection {
+      display: block; }
+    main .new-collection-all .new-collection .add-collection {
+      position: absolute;
+      background-color: transparent;
+      padding: 5px 10px;
+      background-color: #ff7373;
+      bottom: 20px;
+      right: 20px;
+      display: none; }
+    main .new-collection-all .new-collection img {
+      display: block;
+      margin: auto;
+      margin-top: 28px; }
+    main .new-collection-all .new-collection .interest {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 8px 10px;
+      background-color: #ff7373;
+      font-family: "TruenoBd", arial;
+      position: absolute;
+      top: 23px;
+      color: #ffffff;
+      right: 0; }
+    main .new-collection-all .new-collection span {
+      display: block;
+      font-family: "TruenoLt", arial;
+      position: absolute; }
+    main .new-collection-all .new-collection .price {
+      top: 29px;
+      left: 27px;
+      color: #ff7373;
+      font-size: 24px;
+      font-weight: 500; }
+      main .new-collection-all .new-collection .price.usual {
+        color: #8a8784; }
+    main .new-collection-all .new-collection .discount {
+      top: 65px;
+      left: 27px;
+      color: #8a8784;
+      font-size: 16px;
+      text-decoration: line-through; }
+    main .new-collection-all .new-collection h4 {
+      color: #8a8784;
+      font-size: 16px;
+      line-height: 26px;
+      font-family: "TruenoLt", arial;
+      margin-left: 29px;
+      font-weight: 600; }
+    main .new-collection-all .new-collection p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #8a8784;
+      font-size: 16px;
+      line-height: 30px;
+      font-family: "TruenoLt", arial;
+      margin-left: 29px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-right: 60px; }
+      main .new-collection-all .new-collection p .number {
+        font-size: 13px;
+        color: #bdb9b5;
+        font-weight: 500; }
+
+main .representatives {
+  margin-bottom: 100px; }
+  main .representatives ul li {
+    margin-left: 80px; }
+    main .representatives ul li:first-child {
+      margin-left: 0px; }
+
+main .reviews {
+  width: 100%;
+  min-height: 570px;
+  background-image: url("../img/background.jpg"); }
+  main .reviews ul {
+    padding-top: 102px; }
+    main .reviews ul li {
+      margin-right: 130px;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+      main .reviews ul li img {
+        display: block;
+        margin: auto;
+        padding-bottom: 29px;
+        cursor: pointer; }
+      main .reviews ul li:last-child {
+        margin-right: 0px; }
+      main .reviews ul li span {
+        color: #ffffff;
+        font-family: "TruenoBd", arial;
+        font-size: 16px;
+        line-height: 29px; }
+      main .reviews ul li .stars {
+        padding: 0;
+        padding-top: 5px; }
+    main .reviews ul .opacity {
+      opacity: 0.2; }
+  main .reviews .comments {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    margin-top: 28px;
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    main .reviews .comments:after {
+      top: -40px;
+      content: '';
+      position: absolute;
+      border: 20px solid transparent;
+      border-bottom: 20px solid rgba(255, 255, 255, 0.1);
+      left: 565px; }
+    main .reviews .comments.second {
+      display: none;
+      margin-top: -210px; }
+    main .reviews .comments span {
+      display: inline-block;
+      min-height: 93px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "TruenoLt", arial;
+      width: 60%;
+      line-height: 28px;
+      margin-top: 60px;
+      padding-bottom: 40px; }
+
+main .latest-news {
+  padding-bottom: 100px; }
+  main .latest-news h1 {
+    display: block;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "TruenoBd", arial;
+    color: #623232;
+    margin-top: 105px;
+    text-align: center; }
+  main .latest-news .popular-new ul {
+    margin-top: 50px; }
+    main .latest-news .popular-new ul li {
+      display: block;
+      width: 350px;
+      height: 350px;
+      margin-left: 30px;
+      position: relative; }
+      main .latest-news .popular-new ul li:first-child {
+        margin-left: 0; }
+      main .latest-news .popular-new ul li .popular-new-date {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        color: #ffffff;
+        line-height: 26px; }
+        main .latest-news .popular-new ul li .popular-new-date span {
+          font-size: 16px;
+          font-family: "TruenoBd", arial;
+          font-weight: 600; }
+        main .latest-news .popular-new ul li .popular-new-date p {
+          font-size: 13px;
+          font-family: "TruenoLt", arial;
+          margin-right: 103px; }
+        main .latest-news .popular-new ul li .popular-new-date a {
+          display: inline-block;
+          margin-left: 5px;
+          color: #ff7373;
+          font-size: 13px;
+          font-family: "TruenoLt", arial; }
+
+footer .looking-for-help {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff7373; }
+  footer .looking-for-help .looking-for-help-text-img {
+    margin: auto;
+    margin-top: 73px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 70px;
+    margin-right: 145px; }
+    footer .looking-for-help .looking-for-help-text-img img {
+      margin-top: 6px;
+      margin-right: 30px;
+      width: 60px;
+      height: 42px; }
+    footer .looking-for-help .looking-for-help-text-img .looking-for-help-text h1 {
+      display: inline;
+      color: #ffffff;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: "TruenoBd", arial;
+      font-weight: 600;
+      line-height: 26px; }
+    footer .looking-for-help .looking-for-help-text-img .looking-for-help-text p {
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 30px; }
+  footer .looking-for-help button {
+    margin: auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #623232;
+    padding: 16px 30px;
+    color: #ffffff;
+    font-family: "TruenoBd", arial;
+    font-weight: 600; }
+    footer .looking-for-help button:hover {
+      background-color: #512929; }
+
+footer .another-services {
+  background-color: #623232; }
+  footer .another-services ul {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    footer .another-services ul li {
+      margin-right: 25px; }
+      footer .another-services ul li img {
+        display: block;
+        margin: auto; }
+      footer .another-services ul li a {
+        margin-top: 30px;
+        display: block;
+        white-space: pre-line;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 26px;
+        font-family: "TruenoLt", arial; }
+      footer .another-services ul li:last-child {
+        margin-top: 10px;
+        margin-right: 0; }
+  footer .another-services hr {
+    background-color: #ffffff;
+    opacity: 0.15;
+    max-width: 1110px;
+    height: 1px;
+    margin: auto; }
+
+footer .contact-us {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 100px; }
+  footer .contact-us ul {
+    padding: 0;
+    display: block; }
+    footer .contact-us ul.first li {
+      margin-bottom: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      footer .contact-us ul.first li:last-child {
+        margin-top: 0;
+        margin-bottom: 0; }
+      footer .contact-us ul.first li .contact-us-img {
+        background-color: #ff7373;
+        height: 55px;
+        width: 55px;
+        line-height: 26px; }
+        footer .contact-us ul.first li .contact-us-img img {
+          padding: 18px; }
+      footer .contact-us ul.first li img.none {
+        width: 20px;
+        height: 14px; }
+      footer .contact-us ul.first li h5 {
+        display: block;
+        margin-left: 20px;
+        margin-top: 5px;
+        color: #ff7373;
+        font-size: 16px;
+        line-height: 26px;
+        font-family: "TruenoLt", arial;
+        white-space: pre-line;
+        font-weight: 600; }
+        footer .contact-us ul.first li h5 small {
+          color: #ffffff;
+          font-weight: 400; }
+    footer .contact-us ul.twelve {
+      margin-right: 90px; }
+      footer .contact-us ul.twelve:last-child {
+        margin-right: 0; }
+      footer .contact-us ul.twelve li:first-child a {
+        color: #ff7373;
+        font-weight: 600; }
+      footer .contact-us ul.twelve li:last-child {
+        margin-top: 0; }
+      footer .contact-us ul.twelve li a {
+        text-align: left;
+        margin: 0;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: "TruenoLt", arial;
+        line-height: 34px;
+        font-weight: 400; }
+        footer .contact-us ul.twelve li a:hover {
+          color: #ff7373; }
+
+footer .all-rights-reserved {
+  max-width: 1110px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 42px;
+  padding-bottom: 48px; }
+  footer .all-rights-reserved .all-rights-reserved-img {
+    width: calc(100%  /3); }
+  footer .all-rights-reserved h6 {
+    margin-top: 10px;
+    text-align: center;
+    width: calc(100%  /3);
+    color: #ffffff;
+    font-family: "TruenoLt", arial;
+    font-size: 16px; }
+  footer .all-rights-reserved ul.last {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100%  /3);
+    padding: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    footer .all-rights-reserved ul.last li {
+      margin-right: 30px; }
+      footer .all-rights-reserved ul.last li:first-child {
+        margin-top: 4px; }
+      footer .all-rights-reserved ul.last li:last-child {
+        margin-right: 0;
+        margin-top: 4px; }
+
+@media (max-width: 768px) {
+  body header .header-buy ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%; }
+  body header .header-buy .header-buy-but {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 70%; }
+    body header .header-buy .header-buy-but .header-buy-button button {
+      margin-left: 10px; }
+  body header .home-page .home-page-table {
+    position: relative; }
+    body header .home-page .home-page-table .img-block {
+      margin: auto; }
+    body header .home-page .home-page-table .c-hamburger {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    body header .home-page .home-page-table ul#table {
+      display: none;
+      width: 100%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body header .home-page .home-page-table ul#table li:first-child {
+        margin-left: 38px; }
+  body header .home-page .home-page-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 100px; }
+    body header .home-page .home-page-action img {
+      position: relative;
+      top: -10px;
+      left: -15px;
+      width: 360px;
+      height: 270px; }
+    body header .home-page .home-page-action .home-page-action-all {
+      padding-top: 20px;
+      margin: 0;
+      margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all h5 {
+        font-size: 20px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all h1 {
+        font-size: 50px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all h2 {
+        font-size: 30px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all small {
+        font-size: 14px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all button {
+        margin-left: 20px; }
+  body main .popular-sneakers-collection-all {
+    margin-top: 20px;
+    display: block; }
+    body main .popular-sneakers-collection-all .popular-sneakers-collection-nike {
+      margin: auto;
+      width: 320px;
+      height: 360px; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-nike img {
+        width: 100%;
+        height: 360px; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-nike button {
+        width: 100px;
+        font-size: 10px;
+        left: 130px;
+        bottom: 30px; }
+    body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes {
+      margin-top: 20px;
+      margin-left: 0; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals {
+        width: 100%; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals span {
+          margin-left: 230px;
+          font-size: 20px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals h3 {
+          margin-left: 230px;
+          font-size: 20px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals button {
+          margin-left: 200px;
+          width: 130px;
+          font-size: 12px;
+          width: 120px; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex img {
+          margin-right: 10px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex .popular-sneakers-collection-premium {
+          margin: 0;
+          margin-top: 10px; }
+  body main ul {
+    margin-top: 50px; }
+    body main ul li a {
+      font-size: 20px;
+      margin-left: 20px; }
+  body main .new-collection-all {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    body main .new-collection-all .new-collection {
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 10px; }
+      body main .new-collection-all .new-collection:first-child {
+        margin-left: 10px; }
+      body main .new-collection-all .new-collection .add-collection {
+        display: block; }
+  body main .representatives {
+    margin-bottom: 50px; }
+    body main .representatives ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body main .representatives ul li {
+        margin-left: 0;
+        margin-right: 50px;
+        margin-top: 20px; }
+  body main .reviews {
+    width: 100%; }
+    body main .reviews ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-top: 50px; }
+      body main .reviews ul li {
+        width: 33.33%;
+        margin-right: 0; }
+        body main .reviews ul li img.stars {
+          width: 100px;
+          height: 18px; }
+        body main .reviews ul li span {
+          display: block;
+          min-height: 117px;
+          margin-left: 10px; }
+        body main .reviews ul li:last-child span {
+          padding-right: 10px; }
+    body main .reviews .comments:after {
+      left: 20px; }
+    body main .reviews .comments span {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-top: 45px;
+      padding-bottom: 10px; }
+  body main .latest-news h1 {
+    margin-top: 50px; }
+  body main .latest-news .popular-new ul {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    body main .latest-news .popular-new ul li {
+      margin-left: 5px;
+      margin-top: 10px; }
+      body main .latest-news .popular-new ul li:first-child {
+        margin-left: 5px; }
+  footer .looking-for-help {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    footer .looking-for-help .looking-for-help-text-img {
+      margin: auto;
+      margin-top: 20px;
+      padding-bottom: 30px; }
+      footer .looking-for-help .looking-for-help-text-img img {
+        margin-left: 10px; }
+      footer .looking-for-help .looking-for-help-text-img .looking-for-help-text h1 {
+        font-size: 23px; }
+    footer .looking-for-help button {
+      margin: auto;
+      margin-bottom: 20px; }
+  footer .another-services ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    footer .another-services ul li:last-child {
+      margin-top: 30px;
+      margin-right: 25px; }
+  footer .contact-us {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    footer .contact-us ul.first {
+      margin-left: 40px;
+      margin-bottom: 20px; }
+    footer .contact-us ul.twelve {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0; }
+      footer .contact-us ul.twelve:last-child li {
+        margin-right: -30px; }
+  footer .all-rights-reserved {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    footer .all-rights-reserved .all-rights-reserved-img {
+      width: auto;
+      margin-left: 20px; }
+    footer .all-rights-reserved h6 {
+      width: auto;
+      margin-left: 20px; }
+    footer .all-rights-reserved ul.last {
+      width: auto;
+      margin-left: 20px; } }
+
+@media (min-width: 769px) and (max-width: 1150px) {
+  body header .header-buy ul {
+    width: 50%; }
+  body header .header-buy .header-buy-but {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 50%; }
+    body header .header-buy .header-buy-but .header-buy-button button {
+      margin-left: 10px; }
+  body header .home-page .home-page-table {
+    position: relative; }
+    body header .home-page .home-page-table .img-block {
+      margin: auto; }
+    body header .home-page .home-page-table .c-hamburger {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    body header .home-page .home-page-table ul#table {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body header .home-page .home-page-table ul#table li:first-child {
+        margin-left: 38px; }
+  body header .home-page .home-page-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 100px; }
+    body header .home-page .home-page-action img {
+      position: relative;
+      top: -10px;
+      left: -15px;
+      width: 360px;
+      height: 270px; }
+    body header .home-page .home-page-action .home-page-action-all {
+      padding-top: 20px;
+      margin: 0;
+      margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all h5 {
+        font-size: 20px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all h1 {
+        font-size: 50px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all h2 {
+        font-size: 30px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all small {
+        font-size: 14px;
+        margin-left: 5px; }
+      body header .home-page .home-page-action .home-page-action-all button {
+        margin-left: 20px; }
+  body main .popular-sneakers-collection-all {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    body main .popular-sneakers-collection-all .popular-sneakers-collection-nike {
+      width: 320px;
+      height: 360px;
+      width: 50%; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-nike img {
+        width: 100%;
+        height: 360px; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-nike button {
+        width: 100px;
+        font-size: 10px;
+        left: 130px;
+        bottom: 30px; }
+    body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes {
+      width: 50%;
+      margin-left: 0; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals {
+        margin-left: 20px;
+        height: 362px;
+        width: 350px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals span {
+          margin-left: 230px;
+          font-size: 20px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals h3 {
+          margin-left: 230px;
+          font-size: 20px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-arrivals button {
+          margin-left: 200px;
+          width: 130px;
+          font-size: 12px;
+          width: 120px; }
+      body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex {
+        margin-left: -250px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex img {
+          margin-right: 10px; }
+        body main .popular-sneakers-collection-all .popular-sneakers-collection-athletes .popular-sneakers-collection-2ex .popular-sneakers-collection-premium {
+          margin: 0;
+          margin-top: 10px; }
+  body main ul {
+    margin-top: 50px; }
+    body main ul li a {
+      font-size: 20px;
+      margin-left: 20px; }
+  body main .new-collection-all {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    body main .new-collection-all .new-collection {
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 10px; }
+      body main .new-collection-all .new-collection:first-child {
+        margin-left: 10px; }
+      body main .new-collection-all .new-collection .add-collection {
+        display: block; }
+  body main .representatives {
+    margin-bottom: 50px; }
+    body main .representatives ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body main .representatives ul li {
+        margin-left: 0;
+        margin-right: 50px;
+        margin-top: 20px; }
+  body main .reviews {
+    width: 100%; }
+    body main .reviews ul {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-top: 50px; }
+      body main .reviews ul li {
+        width: 33.33%;
+        margin-right: 0; }
+        body main .reviews ul li img.stars {
+          width: 100px;
+          height: 18px; }
+        body main .reviews ul li span {
+          display: block;
+          min-height: 117px;
+          margin-left: 10px; }
+        body main .reviews ul li:last-child span {
+          padding-right: 10px; }
+    body main .reviews .comments:after {
+      left: 20px; }
+    body main .reviews .comments span {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-top: 45px;
+      padding-bottom: 10px; }
+  body main .latest-news h1 {
+    margin-top: 50px; }
+  body main .latest-news .popular-new {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden; }
+    body main .latest-news .popular-new ul {
+      width: 100%; }
+      body main .latest-news .popular-new ul li {
+        width: 33.33%;
+        margin-left: 5px;
+        margin-top: 10px; }
+        body main .latest-news .popular-new ul li:first-child {
+          margin-left: 5px; }
+  footer .looking-for-help {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    footer .looking-for-help .looking-for-help-text-img {
+      margin: auto;
+      margin-top: 20px;
+      padding-bottom: 30px; }
+      footer .looking-for-help .looking-for-help-text-img img {
+        margin-left: 10px; }
+      footer .looking-for-help .looking-for-help-text-img .looking-for-help-text h1 {
+        font-size: 23px; }
+    footer .looking-for-help button {
+      margin: auto;
+      margin-bottom: 20px; }
+  footer .another-services ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    footer .another-services ul li:last-child {
+      margin-top: 30px;
+      margin-right: 25px; }
+  footer .contact-us {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    footer .contact-us ul.first {
+      margin-left: 40px;
+      margin-bottom: 20px; }
+    footer .contact-us ul.twelve {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0; }
+      footer .contact-us ul.twelve:last-child li {
+        margin-right: -30px; }
+  footer .all-rights-reserved {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    footer .all-rights-reserved .all-rights-reserved-img {
+      width: auto;
+      margin-left: 20px; }
+    footer .all-rights-reserved h6 {
+      width: auto;
+      margin-left: 20px; }
+    footer .all-rights-reserved ul.last {
+      width: auto;
+      margin-left: 20px; } }
