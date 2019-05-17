@@ -56,3 +56,65 @@ function fun4(){
 
     }
 }
+
+const basket=[];
+const newCollectionAll=document.querySelectorAll('.new-collection')
+const allPrice= document.querySelector('#butText');
+var cost=0;
+for (let i = 0; i < newCollectionAll.length; i++) {
+    const newCollection=newCollectionAll[i];
+    
+    
+    
+    newCollection.onclick=function() {
+        basket.push(newCollection);
+        console.log(basket);
+        
+        const price=this.querySelector('span');
+        var a = Number(price.innerText);
+        newCollection.setAttribute('data-cost', a);
+
+        cost +=Number(newCollection.getAttribute('data-cost'));
+        console.log(cost);
+        document.querySelector('#butText').innerHTML=cost;
+        var Lengtha=basket.length;
+        var AllLengtha=Lengtha +' ' +'Items';
+        document.querySelector('#items').innerHTML=AllLengtha;
+        
+         newCollection.style.transition='all 0.2s';
+        var num1=0;
+        function rotate(){
+            num1=num1+10;
+            if(newCollection.style.transform=='rotateX(360deg)'){
+                clearTimeout(timer);
+                num1=0;
+                newCollection.style.transition='none';
+                newCollection.style.transform='rotateX(0)';
+                
+            }
+            else{
+                newCollection.style.transform='rotateX('+num1+'deg)';
+                var timer=setTimeout(rotate, 100);
+            }
+        }
+        rotate();
+
+    }
+}
+
+document.querySelector('#numbe').onclick=Basket;
+document.querySelector('#butText').onclick=Basket;
+document.querySelector('#butImg').onclick=Basket;
+document.querySelector('#items').onclick=Basket;
+const allBasket=document.querySelector('.allbasket');
+function Basket (){
+    if(allBasket.style.right==='0px'){
+        allBasket.style.right='-1000px';
+    }
+    else{
+        allBasket.style.right='0px';
+    }
+}
+
+
+
